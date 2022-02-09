@@ -196,6 +196,47 @@ let rollDice = document.querySelector('#roll')
 let clearBoard = document.querySelector('#clear')
 let image = document.getElementById('dice-image')
 
+
+//setting variables for counting
+let num2 = 0
+let num3 = 0
+let num4 = 0
+let num5 = 0
+let num6 = 0
+let num7 = 0
+let num8 = 0
+let num9 = 0
+let num10 = 0
+let num11 = 0
+let num12 = 0
+
+//accessing table to change numbers
+let tbnum2 = document.querySelector('#dices-2')
+let tbnum3 = document.querySelector('#dices-3')
+let tbnum4 = document.querySelector('#dices-4')
+let tbnum5 = document.querySelector('#dices-5')
+let tbnum6 = document.querySelector('#dices-6')
+let tbnum7 = document.querySelector('#dices-7')
+let tbnum8 = document.querySelector('#dices-8')
+let tbnum9 = document.querySelector('#dices-9')
+let tbnum10 = document.querySelector('#dices-10')
+let tbnum11 = document.querySelector('#dices-11')
+let tbnum12 = document.querySelector('#dices-12')
+
+//accessing table to change percentages
+let tbperc2 = document.querySelector('#2s-perc')
+let tbperc3 = document.querySelector('#3s-perc')
+let tbperc4 = document.querySelector('#4s-perc')
+let tbperc5 = document.querySelector('#5s-perc')
+let tbperc6 = document.querySelector('#6s-perc')
+let tbperc7 = document.querySelector('#7s-perc')
+let tbperc8 = document.querySelector('#8s-perc')
+let tbperc9 = document.querySelector('#9s-perc')
+let tbperc10 = document.querySelector('#10s-perc')
+let tbperc11 = document.querySelector('#11s-perc')
+let tbperc12 = document.querySelector('#12s-perc')
+
+
 rollDice.addEventListener('click', function(){
     let rolledValue1 = Math.round(Math.random() * 6)
     let rolledValue2 = Math.round(Math.random() * 6)
@@ -206,41 +247,42 @@ rollDice.addEventListener('click', function(){
 
     if (rolledValue1 == 0 || rolledValue2 == 0){
         console.log('Please roll again.')
+    } else {
+        //Changing image tag for Dice 1
+        if (rolledValue1 == 1){
+            dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice1.png"
+        } else if (rolledValue1 == 2){
+            dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice2.png"
+        } else if (rolledValue1 == 3){
+            dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice3.png"
+        } else if (rolledValue1 == 4){
+            dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice4.png"
+        } else if (rolledValue1 == 5){
+            dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice5.png"
+        } else {
+            dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice6.png"
+        }
+        //Changing image tag for Dice 2
+        if (rolledValue2 == 1){
+            dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice1.png"
+        } else if (rolledValue2 == 2){
+            dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice2.png"
+        } else if (rolledValue2 == 3){
+            dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice3.png"
+        } else if (rolledValue2 == 4){
+            dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice4.png"
+        } else if (rolledValue2 == 5){
+            dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice5.png"
+        } else {
+            dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice6.png"
+        }
     }
     
-//Changing image tag for dice 1
-    if (rolledValue1 == 1){
-        dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice1.png"
-    } else if (rolledValue1 == 2){
-        dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice2.png"
-    } else if (rolledValue1 == 3){
-        dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice3.png"
-    } else if (rolledValue1 == 4){
-        dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice4.png"
-    } else if (rolledValue1 == 5){
-        dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice5.png"
-    } else if (rolledValue1 == 6){
-        dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice6.png"
-    }
-
-
-//Changing image tag for dice 2
-    if (rolledValue2 == 1){
-        dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice1.png"
-    } else if (rolledValue2 == 2){
-        dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice2.png"
-    } else if (rolledValue2 == 3){
-        dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice3.png"
-    } else if (rolledValue2 == 4){
-        dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice4.png"
-    } else if (rolledValue2 == 5){
-        dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice5.png"
-    } else if (rolledValue2 == 6){
-        dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice6.png"
-    }
-
-
     let totalRolledValue = rolledValue1 + rolledValue2
     console.log(totalRolledValue)
+
+    if (totalRolledValue == 2){
+
+    }
 })
 
