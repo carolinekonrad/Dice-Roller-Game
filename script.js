@@ -224,17 +224,17 @@ let tbnum11 = document.querySelector('#dices-11')
 let tbnum12 = document.querySelector('#dices-12')
 
 //accessing table to change percentages
-let tbperc2 = document.querySelector('#2s-perc')
-let tbperc3 = document.querySelector('#3s-perc')
-let tbperc4 = document.querySelector('#4s-perc')
-let tbperc5 = document.querySelector('#5s-perc')
-let tbperc6 = document.querySelector('#6s-perc')
-let tbperc7 = document.querySelector('#7s-perc')
-let tbperc8 = document.querySelector('#8s-perc')
-let tbperc9 = document.querySelector('#9s-perc')
-let tbperc10 = document.querySelector('#10s-perc')
-let tbperc11 = document.querySelector('#11s-perc')
-let tbperc12 = document.querySelector('#12s-perc')
+let tbperc2 = document.getElementById('2s-perc')
+let tbperc3 = document.getElementById('3s-perc')
+let tbperc4 = document.getElementById('4s-perc')
+let tbperc5 = document.getElementById('5s-perc')
+let tbperc6 = document.getElementById('6s-perc')
+let tbperc7 = document.getElementById('7s-perc')
+let tbperc8 = document.getElementById('8s-perc')
+let tbperc9 = document.getElementById('9s-perc')
+let tbperc10 = document.getElementById('10s-perc')
+let tbperc11 = document.getElementById('11s-perc')
+let tbperc12 = document.getElementById('12s-perc')
 
 
 rollDice.addEventListener('click', function(){
