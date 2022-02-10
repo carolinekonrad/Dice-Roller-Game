@@ -209,6 +209,7 @@ let num9 = 0
 let num10 = 0
 let num11 = 0
 let num12 = 0
+let totalnum = 0
 
 //accessing table to change numbers
 let tbnum2 = document.querySelector('#dices-2')
@@ -242,8 +243,6 @@ rollDice.addEventListener('click', function(){
     let rolledValue2 = Math.round(Math.random() * 6)
     dice1Image = document.querySelector('#dice-image')
     dice2Image = document.querySelector('#dice-image2')
-    console.log(rolledValue1)
-    console.log(rolledValue2)
 
     if (rolledValue1 == 0 || rolledValue2 == 0){
         console.log('Please roll again.')
@@ -276,13 +275,430 @@ rollDice.addEventListener('click', function(){
         } else {
             dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice6.png"
         }
-    }
-    
-    let totalRolledValue = rolledValue1 + rolledValue2
-    console.log(totalRolledValue)
-
-    if (totalRolledValue == 2){
-
+        let totalRolledValue = rolledValue1 + rolledValue2
+        console.log(totalRolledValue)
+        if (totalRolledValue == 2){
+            num2 += 1
+            tbnum2.textContent = num2
+            totalnum += 1
+            tbperc2.textContent = Math.round(num2 / totalnum * 100) + "%"
+            if (num3 != 0){
+                tbperc3.textContent = Math.round(num3 / totalnum * 100) + "%"
+            }
+            if (num4 != 0){
+                tbperc4.textContent = Math.round(num4 / totalnum * 100) + "%"
+            }
+            if (num5 != 0){
+                tbperc5.textContent = Math.round(num5 / totalnum * 100) + "%"
+            }
+            if (num6 != 0){
+                tbperc6.textContent = Math.round(num6 / totalnum * 100) + "%"
+            }
+            if (num7 != 0){
+                tbperc7.textContent = Math.round(num7 / totalnum * 100) + "%"
+            }
+            if (num8 != 0){
+                tbperc8.textContent = Math.round(num8 / totalnum * 100) + "%"
+            }
+            if (num9 != 0){
+                tbperc9.textContent = Math.round(num9 / totalnum * 100) + "%"
+            }
+            if (num10 != 0){
+                tbperc10.textContent = Math.round(num10 / totalnum * 100) + "%"
+            }
+            if (num11 != 0){
+                tbperc11.textContent = Math.round(num11 / totalnum * 100) + "%"
+            }
+            if (num12 != 0){
+                tbperc12.textContent = Math.round(num12 / totalnum * 100) + "%"
+            }
+        } else if (totalRolledValue == 3){
+            num3 += 1
+            tbnum3.textContent = num3
+            totalnum += 1
+            tbperc3.textContent = Math.round(num3 / totalnum * 100) + "%"
+            if (num2 != 0){
+                tbperc2.textContent = Math.round(num2 / totalnum * 100) + "%"
+            }
+            if (num4 != 0){
+                tbperc4.textContent = Math.round(num4 / totalnum * 100) + "%"
+            }
+            if (num5 != 0){
+                tbperc5.textContent = Math.round(num5 / totalnum * 100) + "%"
+            }
+            if (num6 != 0){
+                tbperc6.textContent = Math.round(num6 / totalnum * 100) + "%"
+            }
+            if (num7 != 0){
+                tbperc7.textContent = Math.round(num7 / totalnum * 100) + "%"
+            }
+            if (num8 != 0){
+                tbperc8.textContent = Math.round(num8 / totalnum * 100) + "%"
+            }
+            if (num9 != 0){
+                tbperc9.textContent = Math.round(num9 / totalnum * 100) + "%"
+            }
+            if (num10 != 0){
+                tbperc10.textContent = Math.round(num10 / totalnum * 100) + "%"
+            }
+            if (num11 != 0){
+                tbperc11.textContent = Math.round(num11 / totalnum * 100) + "%"
+            }
+            if (num12 != 0){
+                tbperc12.textContent = Math.round(num12 / totalnum * 100) + "%"
+            }
+        } else if (totalRolledValue == 4){
+            num4 += 1
+            tbnum4.textContent = num4
+            totalnum += 1
+            tbperc4.textContent = Math.round(num4 / totalnum * 100) + "%"
+            if (num2 != 0){
+                tbperc2.textContent = Math.round(num2 / totalnum * 100) + "%"
+            }
+            if (num3 != 0){
+                tbperc3.textContent = Math.round(num3 / totalnum * 100) + "%"
+            }
+            if (num5 != 0){
+                tbperc5.textContent = Math.round(num5 / totalnum * 100) + "%"
+            }
+            if (num6 != 0){
+                tbperc6.textContent = Math.round(num6 / totalnum * 100) + "%"
+            }
+            if (num7 != 0){
+                tbperc7.textContent = Math.round(num7 / totalnum * 100) + "%"
+            }
+            if (num8 != 0){
+                tbperc8.textContent = Math.round(num8 / totalnum * 100) + "%"
+            }
+            if (num9 != 0){
+                tbperc9.textContent = Math.round(num9 / totalnum * 100) + "%"
+            }
+            if (num10 != 0){
+                tbperc10.textContent = Math.round(num10 / totalnum * 100) + "%"
+            }
+            if (num11 != 0){
+                tbperc11.textContent = Math.round(num11 / totalnum * 100) + "%"
+            }
+            if (num12 != 0){
+                tbperc12.textContent = Math.round(num12 / totalnum * 100) + "%"
+            }
+        } else if (totalRolledValue == 5){
+            num5 += 1
+            tbnum5.textContent = num5
+            totalnum += 1
+            tbperc5.textContent = Math.round(num5 / totalnum * 100) + "%"
+            if (num2 != 0){
+                tbperc2.textContent = Math.round(num2 / totalnum * 100) + "%"
+            }
+            if (num3 != 0){
+                tbperc3.textContent = Math.round(num3 / totalnum * 100) + "%"
+            }
+            if (num4 != 0){
+                tbperc4.textContent = Math.round(num4 / totalnum * 100) + "%"
+            }
+            if (num6 != 0){
+                tbperc6.textContent = Math.round(num6 / totalnum * 100) + "%"
+            }
+            if (num7 != 0){
+                tbperc7.textContent = Math.round(num7 / totalnum * 100) + "%"
+            }
+            if (num8 != 0){
+                tbperc8.textContent = Math.round(num8 / totalnum * 100) + "%"
+            }
+            if (num9 != 0){
+                tbperc9.textContent = Math.round(num9 / totalnum * 100) + "%"
+            }
+            if (num10 != 0){
+                tbperc10.textContent = Math.round(num10 / totalnum * 100) + "%"
+            }
+            if (num11 != 0){
+                tbperc11.textContent = Math.round(num11 / totalnum * 100) + "%"
+            }
+            if (num12 != 0){
+                tbperc12.textContent = Math.round(num12 / totalnum * 100) + "%"
+            }
+        } else if (totalRolledValue == 6){
+            num6 += 1
+            tbnum6.textContent = num6
+            totalnum += 1
+            tbperc6.textContent = Math.round(num6 / totalnum * 100) + "%"
+            if (num2 != 0){
+                tbperc2.textContent = Math.round(num2 / totalnum * 100) + "%"
+            }
+            if (num3 != 0){
+                tbperc3.textContent = Math.round(num3 / totalnum * 100) + "%"
+            }
+            if (num4 != 0){
+                tbperc4.textContent = Math.round(num4 / totalnum * 100) + "%"
+            }
+            if (num5 != 0){
+                tbperc5.textContent = Math.round(num5 / totalnum * 100) + "%"
+            }
+            if (num7 != 0){
+                tbperc7.textContent = Math.round(num7 / totalnum * 100) + "%"
+            }
+            if (num8 != 0){
+                tbperc8.textContent = Math.round(num8 / totalnum * 100) + "%"
+            }
+            if (num9 != 0){
+                tbperc9.textContent = Math.round(num9 / totalnum * 100) + "%"
+            }
+            if (num10 != 0){
+                tbperc10.textContent = Math.round(num10 / totalnum * 100) + "%"
+            }
+            if (num11 != 0){
+                tbperc11.textContent = Math.round(num11 / totalnum * 100) + "%"
+            }
+            if (num12 != 0){
+                tbperc12.textContent = Math.round(num12 / totalnum * 100) + "%"
+            }
+        } else if (totalRolledValue == 7){
+            num7 += 1
+            tbnum7.textContent = num7
+            totalnum += 1
+            tbperc7.textContent = Math.round(num7 / totalnum * 100) + "%"
+            if (num2 != 0){
+                tbperc2.textContent = Math.round(num2 / totalnum * 100) + "%"
+            }
+            if (num3 != 0){
+                tbperc3.textContent = Math.round(num3 / totalnum * 100) + "%"
+            }
+            if (num4 != 0){
+                tbperc4.textContent = Math.round(num4 / totalnum * 100) + "%"
+            }
+            if (num5 != 0){
+                tbperc5.textContent = Math.round(num5 / totalnum * 100) + "%"
+            }
+            if (num6 != 0){
+                tbperc6.textContent = Math.round(num6 / totalnum * 100) + "%"
+            }
+            if (num8 != 0){
+                tbperc8.textContent = Math.round(num8 / totalnum * 100) + "%"
+            }
+            if (num9 != 0){
+                tbperc9.textContent = Math.round(num9 / totalnum * 100) + "%"
+            }
+            if (num10 != 0){
+                tbperc10.textContent = Math.round(num10 / totalnum * 100) + "%"
+            }
+            if (num11 != 0){
+                tbperc11.textContent = Math.round(num11 / totalnum * 100) + "%"
+            }
+            if (num12 != 0){
+                tbperc12.textContent = Math.round(num12 / totalnum * 100) + "%"
+            }
+        } else if (totalRolledValue == 8){
+            num8 += 1
+            tbnum8.textContent = num8
+            totalnum += 1
+            tbperc8.textContent = Math.round(num8 / totalnum * 100) + "%"
+            if (num2 != 0){
+                tbperc2.textContent = Math.round(num2 / totalnum * 100) + "%"
+            }
+            if (num3 != 0){
+                tbperc3.textContent = Math.round(num3 / totalnum * 100) + "%"
+            }
+            if (num4 != 0){
+                tbperc4.textContent = Math.round(num4 / totalnum * 100) + "%"
+            }
+            if (num5 != 0){
+                tbperc5.textContent = Math.round(num5 / totalnum * 100) + "%"
+            }
+            if (num6 != 0){
+                tbperc6.textContent = Math.round(num6 / totalnum * 100) + "%"
+            }
+            if (num7 != 0){
+                tbperc7.textContent = Math.round(num7 / totalnum * 100) + "%"
+            }
+            if (num9 != 0){
+                tbperc9.textContent = Math.round(num9 / totalnum * 100) + "%"
+            }
+            if (num10 != 0){
+                tbperc10.textContent = Math.round(num10 / totalnum * 100) + "%"
+            }
+            if (num11 != 0){
+                tbperc11.textContent = Math.round(num11 / totalnum * 100) + "%"
+            }
+            if (num12 != 0){
+                tbperc12.textContent = Math.round(num12 / totalnum * 100) + "%"
+            }
+        } else if (totalRolledValue == 9){
+            num9 += 1
+            tbnum9.textContent = num9
+            totalnum += 1
+            tbperc9.textContent = Math.round(num9 / totalnum * 100) + "%"
+            if (num2 != 0){
+                tbperc2.textContent = Math.round(num2 / totalnum * 100) + "%"
+            }
+            if (num3 != 0){
+                tbperc3.textContent = Math.round(num3 / totalnum * 100) + "%"
+            }
+            if (num4 != 0){
+                tbperc4.textContent = Math.round(num4 / totalnum * 100) + "%"
+            }
+            if (num5 != 0){
+                tbperc5.textContent = Math.round(num5 / totalnum * 100) + "%"
+            }
+            if (num6 != 0){
+                tbperc6.textContent = Math.round(num6 / totalnum * 100) + "%"
+            }
+            if (num7 != 0){
+                tbperc7.textContent = Math.round(num7 / totalnum * 100) + "%"
+            }
+            if (num8 != 0){
+                tbperc8.textContent = Math.round(num8 / totalnum * 100) + "%"
+            }
+            if (num10 != 0){
+                tbperc10.textContent = Math.round(num10 / totalnum * 100) + "%"
+            }
+            if (num11 != 0){
+                tbperc11.textContent = Math.round(num11 / totalnum * 100) + "%"
+            }
+            if (num12 != 0){
+                tbperc12.textContent = Math.round(num12 / totalnum * 100) + "%"
+            }
+        } else if (totalRolledValue == 10){
+            num10 += 1
+            tbnum10.textContent = num10
+            totalnum += 1
+            tbperc10.textContent = Math.round(num10 / totalnum * 100) + "%"
+            if (num2 != 0){
+                tbperc2.textContent = Math.round(num2 / totalnum * 100) + "%"
+            }
+            if (num3 != 0){
+                tbperc3.textContent = Math.round(num3 / totalnum * 100) + "%"
+            }
+            if (num4 != 0){
+                tbperc4.textContent = Math.round(num4 / totalnum * 100) + "%"
+            }
+            if (num5 != 0){
+                tbperc5.textContent = Math.round(num5 / totalnum * 100) + "%"
+            }
+            if (num6 != 0){
+                tbperc6.textContent = Math.round(num6 / totalnum * 100) + "%"
+            }
+            if (num7 != 0){
+                tbperc7.textContent = Math.round(num7 / totalnum * 100) + "%"
+            }
+            if (num8 != 0){
+                tbperc8.textContent = Math.round(num8 / totalnum * 100) + "%"
+            }
+            if (num9 != 0){
+                tbperc9.textContent = Math.round(num9 / totalnum * 100) + "%"
+            }
+            if (num11 != 0){
+                tbperc11.textContent = Math.round(num11 / totalnum * 100) + "%"
+            }
+            if (num12 != 0){
+                tbperc12.textContent = Math.round(num12 / totalnum * 100) + "%"
+            } 
+        } else if (totalRolledValue == 11){
+            num11 += 1
+            tbnum11.textContent = num11
+            totalnum += 1
+            tbperc11.textContent = Math.round(num11 / totalnum * 100) + "%"
+            if (num2 != 0){
+                tbperc2.textContent = Math.round(num2 / totalnum * 100) + "%"
+            }
+            if (num3 != 0){
+                tbperc3.textContent = Math.round(num3 / totalnum * 100) + "%"
+            }
+            if (num4 != 0){
+                tbperc4.textContent = Math.round(num4 / totalnum * 100) + "%"
+            }
+            if (num5 != 0){
+                tbperc5.textContent = Math.round(num5 / totalnum * 100) + "%"
+            }
+            if (num6 != 0){
+                tbperc6.textContent = Math.round(num6 / totalnum * 100) + "%"
+            }
+            if (num7 != 0){
+                tbperc7.textContent = Math.round(num7 / totalnum * 100) + "%"
+            }
+            if (num8 != 0){
+                tbperc8.textContent = Math.round(num8 / totalnum * 100) + "%"
+            }
+            if (num9 != 0){
+                tbperc9.textContent = Math.round(num9 / totalnum * 100) + "%"
+            }
+            if (num10 != 0){
+                tbperc10.textContent = Math.round(num10 / totalnum * 100) + "%"
+            }
+            if (num12 != 0){
+                tbperc12.textContent = Math.round(num12 / totalnum * 100) + "%"
+            }
+        } else if (totalRolledValue == 12){
+            num12 += 1
+            tbnum12.textContent = num12
+            totalnum += 1
+            tbperc12.textContent = Math.round(num12 / totalnum * 100) + "%"
+            if (num2 != 0){
+                tbperc2.textContent = Math.round(num2 / totalnum * 100) + "%"
+            }
+            if (num3 != 0){
+                tbperc3.textContent = Math.round(num3 / totalnum * 100) + "%"
+            }
+            if (num4 != 0){
+                tbperc4.textContent = Math.round(num4 / totalnum * 100) + "%"
+            }
+            if (num5 != 0){
+                tbperc5.textContent = Math.round(num5 / totalnum * 100) + "%"
+            }
+            if (num6 != 0){
+                tbperc6.textContent = Math.round(num6 / totalnum * 100) + "%"
+            }
+            if (num7 != 0){
+                tbperc7.textContent = Math.round(num7 / totalnum * 100) + "%"
+            }
+            if (num8 != 0){
+                tbperc8.textContent = Math.round(num8 / totalnum * 100) + "%"
+            }
+            if (num9 != 0){
+                tbperc9.textContent = Math.round(num9 / totalnum * 100) + "%"
+            }
+            if (num10 != 0){
+                tbperc10.textContent = Math.round(num10 / totalnum * 100) + "%"
+            }
+            if (num11 != 0){
+                tbperc11.textContent = Math.round(num11 / totalnum * 100) + "%"
+            }
+        }
     }
 })
 
+clearBoard.addEventListener('click', function(){
+    num2 = 0
+    num3 = 0
+    num4 = 0
+    num5 = 0
+    num6 = 0
+    num7 = 0
+    num8 = 0
+    num9 = 0
+    num10 = 0
+    num11 = 0
+    num12 = 0
+    totalnum = 0
+    tbnum2.textContent = num2
+    tbnum3.textContent = num3
+    tbnum4.textContent = num4
+    tbnum5.textContent = num5
+    tbnum6.textContent = num6
+    tbnum7.textContent = num7
+    tbnum8.textContent = num8
+    tbnum9.textContent = num9
+    tbnum10.textContent = num10
+    tbnum11.textContent = num11
+    tbnum12.textContent = num12
+    tbperc2.textContent = "0%"
+    tbperc3.textContent = "0%"
+    tbperc4.textContent = "0%"
+    tbperc5.textContent = "0%"
+    tbperc6.textContent = "0%"
+    tbperc7.textContent = "0%"
+    tbperc8.textContent = "0%"
+    tbperc9.textContent = "0%"
+    tbperc10.textContent = "0%"
+    tbperc11.textContent = "0%"
+    tbperc12.textContent = "0%"
+})
