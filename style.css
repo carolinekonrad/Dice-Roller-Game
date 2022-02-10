@@ -7,7 +7,7 @@ body {
 
 body {
     min-height: 100vh;
-    background: linear-gradient(to bottom left, orange, white);
+    background: linear-gradient(to bottom left, cyan, mediumblue);
 }
 
 main {
@@ -41,7 +41,7 @@ button {
 
 #flip,
 #roll {
-    background: linear-gradient(to bottom left, lightblue, white);
+    background: linear-gradient(to bottom left, red, white);
 }
 
 #flip:hover,
