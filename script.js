@@ -42,7 +42,7 @@
 //         num1s += 1
 //         table1.textContent = num1s
 //         totalRolls += 1
-//         image.src = "file:///C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice1.png"
+//         image.src = "./Assets/dice1.png"
 //         perc1s.textContent = Math.round(num1s / totalRolls * 100) + "%"
 //         if (num2s != 0){
 //             perc2s.textContent = Math.round(num2s / totalRolls * 100) + "%"
@@ -63,7 +63,7 @@
 //         num2s += 1
 //         table2.textContent = num2s
 //         totalRolls += 1
-//         image.src = "file:///C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice2.png"
+//         image.src = "./Assets/dice2.png"
 //         perc2s.textContent = Math.round(num2s / totalRolls * 100) + "%"
 //         if (num1s != 0){
 //             perc1s.textContent = Math.round(num1s / totalRolls * 100) + "%"
@@ -84,7 +84,7 @@
 //         num3s += 1
 //         table3.textContent = num3s
 //         totalRolls += 1
-//         image.src = "file:///C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice3.png"
+//         image.src = "./Assets/dice3.png"
 //         perc3s.textContent = Math.round(num3s / totalRolls * 100) + "%"
 //         if (num1s != 0){
 //             perc1s.textContent = Math.round(num1s / totalRolls * 100) + "%"
@@ -105,7 +105,7 @@
 //         num4s += 1
 //         table4.textContent = num4s
 //         totalRolls += 1
-//         image.src = "file:///C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice4.png"
+//         image.src = "./Assets/dice4.png"
 //         perc4s.textContent = Math.round(num4s / totalRolls * 100) + "%"
 //         if (num1s != 0){
 //             perc1s.textContent = Math.round(num1s / totalRolls * 100) + "%"
@@ -126,7 +126,7 @@
 //         num5s += 1
 //         table5.textContent = num5s
 //         totalRolls += 1
-//         image.src = "file:///C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice5.png"
+//         image.src = "./Assets/dice5.png"
 //         perc5s.textContent = Math.round(num5s / totalRolls * 100) + "%"
 //         if (num1s != 0){
 //             perc1s.textContent = Math.round(num1s / totalRolls * 100) + "%"
@@ -147,7 +147,7 @@
 //         num6s += 1
 //         table6.textContent = num6s
 //         totalRolls += 1
-//         image.src = "file:///C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice6.png"
+//         image.src = "./Assets/dice6.png"
 //         perc6s.textContent = Math.round(num6s / totalRolls * 100) + "%"
 //         if (num1s != 0){
 //             perc1s.textContent = Math.round(num1s / totalRolls * 100) + "%"
@@ -249,31 +249,31 @@ rollDice.addEventListener('click', function(){
     } else {
         //Changing image tag for Dice 1
         if (rolledValue1 == 1){
-            dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice1.png"
+            dice1Image.src = "./Assets/dice1.png"
         } else if (rolledValue1 == 2){
-            dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice2.png"
+            dice1Image.src = "./Assets/dice2.png"
         } else if (rolledValue1 == 3){
-            dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice3.png"
+            dice1Image.src = "./Assets/dice3.png"
         } else if (rolledValue1 == 4){
-            dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice4.png"
+            dice1Image.src = "./Assets/dice4.png"
         } else if (rolledValue1 == 5){
-            dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice5.png"
+            dice1Image.src = "./Assets/dice5.png"
         } else {
-            dice1Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice6.png"
+            dice1Image.src = "./Assets/dice6.png"
         }
         //Changing image tag for Dice 2
         if (rolledValue2 == 1){
-            dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice1.png"
+            dice2Image.src = "./Assets/dice1.png"
         } else if (rolledValue2 == 2){
-            dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice2.png"
+            dice2Image.src = "./Assets/dice2.png"
         } else if (rolledValue2 == 3){
-            dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice3.png"
+            dice2Image.src = "./Assets/dice3.png"
         } else if (rolledValue2 == 4){
-            dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice4.png"
+            dice2Image.src = "./Assets/dice4.png"
         } else if (rolledValue2 == 5){
-            dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice5.png"
+            dice2Image.src = "./Assets/dice5.png"
         } else {
-            dice2Image.src = "C:/Users/carol/InClassAct/FSI-Implement-Coin-Flipper/assets/images/dice/dice6.png"
+            dice2Image.src = "./Assets/dice6.png"
         }
         let totalRolledValue = rolledValue1 + rolledValue2
         console.log(totalRolledValue)
